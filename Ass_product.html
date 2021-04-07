@@ -1,0 +1,30 @@
+<html>
+ <body>
+<body style="background-color:powderblue; background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);">
+  <h3><center>Compute the product of two positive integers without using the multiplication operator (*)</center></h3>
+  Input 1st Number : <br/>
+  <input type="number" id="num1" min=1 /><br/></br>
+Input 2nd Number: <br/>
+<input type="number" id="num2" min=1 /><br/>
+  <input type="button" value="Compute" onClick="compute()"/>
+
+ </body>
+</html>
+
+<script>
+ function compute(){
+  var n1= document.getElementById("num1").value;
+  var n2= document.getElementById("num2").value;
+  var product=0;
+ for(var a=0;a<n2;a++)
+{
+
+for(var b=0;b<n1;b++)
+product++;
+
+}
+
+
+alert("The product is: "+product);
+}
+</script>
